@@ -8,6 +8,15 @@
     "./images/07.jpg",
     "./images/08.jpg",
     "./images/09.jpg",
+    "./images/10.jpg",
+    "./images/11.jpg",
+    "./images/12.jpg",
+    "./images/13.jpg",
+    "./images/14.jpg",
+    "./images/15.jpg",
+    "./images/16.jpg",
+    "./images/17.jpg",
+    "./images/18.jpg",
   ];
   
   // Feliratok a képekhez
@@ -20,7 +29,16 @@
     "Nagy Dávid 12. N",
     "Dobos Dávid 12. N",
     "Polyák András Marcell 12. N",
-    "Nagy Levente 10. N"
+    "Nagy Levente 10. N",
+    "Gál Sándor Lajos 13. N",
+    "Veress Sándor 11. M",
+    "Dudás Gyula 13. M",
+    "Varga Dorina 9. M",
+    "Szűcs Renáta 9. M",
+    "Lakatos Vanda 9. M",
+    "Tuba Izabella 9. M",
+    "Sándor Rebeka 9. M",
+    "Paniczki Boglárka 9. M"
 
   ];
   
