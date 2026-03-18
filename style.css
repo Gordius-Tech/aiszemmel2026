@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Vízszintes középre igazítás */
+}
+
+.main-container {
+    width: 90%;
+    max-width: 1100px; /* Itt állíthatod, milyen széles legyen a középső rész */
+    margin: 40px 0;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255,255,255,0.2);
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h2 {
+    color: white;
+    font-variant: small-caps;
+}
+
+/* 3 OSZLOPOS GRID */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* FIX 3 OSZLOP */
+    gap: 25px;
+}
+
+/* KÁRTYA STÍLUS */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    transform: scale(1.03);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.caption {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+/* MODAL (Nagyítás) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* MOBIL NÉZET - hogy ne legyen túl szűk kis kijelzőn */
+@media (max-width: 800px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Mobilon 2 oszlop */
+    }
+}
+@media (max-width: 500px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Nagyon kicsi kijelzőn 1 oszlop */
+    }
+}
